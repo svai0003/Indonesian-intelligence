@@ -51,6 +51,15 @@ block content
             p.text-muted-75.font-weight-light.mb-5
               | You might find these names unique.
               | Do you think this person is a boy or a girl?
+        #game.justify-center.flex-column
+          h2#question Do you think this is a boy's name or girl's name?
+          .choice-container
+            p.choice-prefix A
+            p.choice-text(data-number='1') Boy
+          .choice-container
+            p.choice-prefix B
+            p.choice-text(data-number='2') Girl
+
 
         
     // Weather
@@ -92,3 +101,5 @@ block content
     script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
     // Core theme JS
     script(src='js/scripts.js')
+    // Quiz JS
+    script(src="js/quiz.js")
