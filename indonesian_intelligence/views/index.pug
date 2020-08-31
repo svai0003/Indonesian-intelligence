@@ -1,4 +1,28 @@
 extends layout 
 
 block content
-  h1 Welcome
+    // Header - set the background image for the header in the line below
+    header.py-5.bg-image-full(style="background-image: url('https://unsplash.it/1900/1080?image=1076');")
+      img.img-fluid.d-block.mx-auto(src='http://placehold.it/200x200&text=Logo', alt='')
+    // Content section
+    section.py-5
+      .container
+        h1 Indonesian Intelligence
+        p.lead We are here to help you learn more about Indonesia!
+
+        p
+          | Jump on our fun activities and learn.
+    // Image element - set the background image for the header in the line below
+    .py-5.bg-image-full(style="background-image: url('https://unsplash.it/1900/1080?image=1081');")
+      // Put anything you want here! There is just a spacer below for demo purposes!
+      div(style='height: 200px;')
+    // Content section
+    section.py-5
+      .container
+        h1 Indonesian Names
+        p.lead Guess the gender!
+        p
+          | You might find these names unique.
+          |  Do you think this person is a boy or a girl?
+    
+      // /.container

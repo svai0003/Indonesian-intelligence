@@ -2,10 +2,36 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap core CSS
+    link(rel='stylesheet' href='/public/vendor/bootstrap/css/bootstrap.min.css')
+    // Custom styles for this template
+    link(rel='stylesheet' href='/public/css/full-width-pics.css')
+    
+
   body
-    block content
-    br
-    hr
-    footer
-      p Copyright &copy: 2020
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='/') Indonesian Intelligence
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/')
+                | Home
+                
+            li.nav-item
+              a.nav-link(href='/panjatpinang') Panjat Pinang
+
+
+      
+      block content
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright © 2020
+    script(src='/public/vendor/jquery/jquery.min.js')
+    script(src='/public/vendor/bootstrap/js/bootstrap.bundle.min.js')
+

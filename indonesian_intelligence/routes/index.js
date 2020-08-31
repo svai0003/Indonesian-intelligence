@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET game page. */
-router.get('/c', function(req, res, next) {
+router.get('/panjatpinang', function(req, res, next) {
   res.render('panjat_pinang', { title: 'Panjat Pinang' });
 });
 
