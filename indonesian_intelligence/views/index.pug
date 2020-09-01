@@ -51,7 +51,13 @@ block content
             p.text-muted-75.font-weight-light.mb-5
               | You might find these names unique.
               | Do you think this person is a boy or a girl?
+            p.text-muted-75.font-weight-light.mb-5
+              | If you guess it wrong, it will be shown with red.
+              | If you guess it right, it will be shown with green!
         #game.justify-center.flex-column
+          #hud
+            #hud-item
+              h1#questionCorrect.hud-main-text
           h2#question Do you think this is a boy's name or girl's name?
           .choice-container
             p.choice-prefix A
@@ -71,8 +77,55 @@ block content
         p.text-light.mb-5
           | Indonesia doesn't have winter, spring, summer or autumn.
           | It's a tropical country so it only has either rainy season or dry season. 
-          | Click on one of these months and see the most common weather for that month.
+          | Switch to one of slides to see the most common weather for specific month.
           | This is based on Denpasar, one of the most visited cities in Indonesia.
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+            li(data-target='#carouselExampleIndicators', data-slide-to='1')
+            li(data-target='#carouselExampleIndicators', data-slide-to='2')
+            li(data-target='#carouselExampleIndicators', data-slide-to='3')
+            li(data-target='#carouselExampleIndicators', data-slide-to='4')
+            li(data-target='#carouselExampleIndicators', data-slide-to='5')
+            li(data-target='#carouselExampleIndicators', data-slide-to='6')
+            li(data-target='#carouselExampleIndicators', data-slide-to='7')
+            li(data-target='#carouselExampleIndicators', data-slide-to='8')
+            li(data-target='#carouselExampleIndicators', data-slide-to='9')
+            li(data-target='#carouselExampleIndicators', data-slide-to='10')
+            li(data-target='#carouselExampleIndicators', data-slide-to='11')
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='/images/1.png', alt='January')
+            .carousel-item
+              img.d-block.w-100(src='/images/2.png' alt='February')
+            .carousel-item
+              img.d-block.w-100(src='/images/3.png' alt='March')
+            .carousel-item
+              img.d-block.w-100(src='/images/4.png' alt='April')
+            .carousel-item
+              img.d-block.w-100(src='/images/5.png' alt='May')
+            .carousel-item
+              img.d-block.w-100(src='/images/6.png' alt='June')
+            .carousel-item
+              img.d-block.w-100(src='/images/7.png' alt='July')
+            .carousel-item
+              img.d-block.w-100(src='/images/8.png' alt='August')
+            .carousel-item
+              img.d-block.w-100(src='/images/9.png' alt='September')
+            .carousel-item
+              img.d-block.w-100(src='/images/10.png' alt='October')
+            .carousel-item
+              img.d-block.w-100(src='/images/11.png' alt='November')
+            .carousel-item
+              img.d-block.w-100(src='/images/12.png' alt='December')
+          a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+
+
     // Contact
     section#contact.page-section
       .container

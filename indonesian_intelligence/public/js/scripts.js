@@ -1,8 +1,3 @@
-/*!
-    * Start Bootstrap - Creative v6.0.3 (https://startbootstrap.com/themes/creative)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-    */
     (function($) {
   "use strict"; // Start of use strict
 
@@ -61,3 +56,16 @@
   });
 
 })(jQuery); // End of use strict
+
+var view = document.getElementById('view');
+var list = document.getElementById('list');
+
+list.addEventListener('click', reveal, false);
+
+function reveal(e) {
+  if (e.target !== e.cyurrentTarget) {
+    var tgt = e.target;
+    var src = tgt.src;
+    view.querySelector('img').src = src;
+  }
+}

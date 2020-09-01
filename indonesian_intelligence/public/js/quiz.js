@@ -26,11 +26,113 @@ let questions = [
     choice2: "Girl",
     answer: 2
   },
+  {
+    question: "Is Edy a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Jufianto a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Aan a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Abdur a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Lia a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Rahmat a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Yana a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Fauzar a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Rahmi a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Feny a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Tessa a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Firdaus a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Rudi a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Rizqi a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Inda a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 2
+  },
+  {
+    question: "Is Supriadi a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
+  {
+    question: "Is Heru a boy or a girl?",
+    choice1: "Boy",
+    choice2: "Girl",
+    answer: 1
+  },
 ];
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 20;
 
 startGame = () => {
   questionCounter = 0;
@@ -42,7 +144,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     //go to the end page
-    return questionCounter = 0;
+    alert("You have go through all the names!");
   }
   questionCounter++;
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
