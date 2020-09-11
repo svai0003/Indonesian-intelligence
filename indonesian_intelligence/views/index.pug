@@ -18,6 +18,8 @@ block content
               a.nav-link.js-scroll-trigger(href='#weather') Weather
             li.nav-item
               a.nav-link.js-scroll-trigger(href='#contact') Contact
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='/panjatpinang') Game
     // Masthead
     header.masthead
       .container.h-100
@@ -79,6 +81,8 @@ block content
           | It's a tropical country so it only has either rainy season or dry season. 
           | Switch to one of slides to see the most common weather for specific month.
           | This is based on Denpasar, one of the most visited cities in Indonesia.
+          |
+          a(href="/weather") click to view the real-time weather!
         #carouselExampleIndicators.carousel.slide(data-ride='carousel')
           ol.carousel-indicators
             li.active(data-target='#carouselIndicators', data-slide-to='0')
